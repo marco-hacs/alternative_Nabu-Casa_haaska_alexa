@@ -1,4 +1,4 @@
-# Alternative nabu haaska alexa
+# Alternative Nabu Casa haaska alexa
 
 With this "solution" it is possible to command HomeAssistant from Alexa without having to EXPRESS ENTITY and without using Nabo or haaska and AWS.
 
