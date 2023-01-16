@@ -22,7 +22,7 @@ sensor:
       last_called_summary: 
         value_template: >
               {% set media = expand(states.group.echos)|selectattr('attributes.last_called','eq',true)|map(attribute='entity_id')|first%}
-              {{ state_attr(media,'last_called_summary') }}
+              {{ state_attr(media,'last_called_summary')|regex_replace(find='alexa ') }}
 ```
 Use the sensor as an automation trigger. 
 ```
@@ -37,7 +37,7 @@ automation:
       entity_id: sensor.last_called_summary
       to: 
         - 'spegni luce studio' 
-        - 'alexa spegni luce studio'
+        - 'spegni la luce dello studio'
     action:
     - service: switch.turn_off
       target:
