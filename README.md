@@ -44,3 +44,6 @@ automation:
         entity_id: switch.luce_studio
 ```
 To avoid getting "error" messages from alexa, **create a routine** in the **Alexa** mobile application with (when this happens) the phrase used in the trigger, and as an action the response you want to get
+
+
+https://community.home-assistant.io/t/alternative-nabu-casa-haaska-alexa/519804
